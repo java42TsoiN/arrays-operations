@@ -40,6 +40,10 @@ public class ArraysOperations {
 		if(index<0) {
 			index= Math.abs(index)-1;
 		}
+		/* V.R. Instead of following 7 lines it is possible to write
+		   return insert(sortedArray, element, index, res);
+		   Pay attention that all needed checking is done inside method insert!
+		 */
 		if(res.length!=sortedArray.length+1) {
 			return WRONG_RESULT_LENGTH;
 		}
@@ -50,6 +54,10 @@ public class ArraysOperations {
 	}
 	public static <T> String addLast(T[] array, T element, T[] res) {
 		//TODO adds a given element at end of the result array
+		/* V.R. The following string does all what is required
+		   return insert(array, element, array.length, res);
+		   Pay attention that all needed checking is done inside method insert!
+		 */
 		if(res.length!=array.length+1) {
 			return WRONG_RESULT_LENGTH;
 		}
@@ -59,6 +67,10 @@ public class ArraysOperations {
 	}
 	public static <T> String addFirst(T[] array, T element, T[] res) {
 		//TODO adds a given element at beginning of the result array
+		/* V.R. The following string does all what is required
+		   return insert(array, element, 0, res);
+		   Pay attention that all needed checking is done inside method insert!
+		 */
 		if(res.length!=array.length+1) {
 			return WRONG_RESULT_LENGTH;
 		}

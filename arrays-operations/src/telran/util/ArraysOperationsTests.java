@@ -48,6 +48,11 @@ private static final int INSERTED_NUMBER = 100;
 		index = 3;
 		remove(arStr, index, actualStr);
 		assertArrayEquals(expectedStrLast, actualStr);
+		/* V.R.
+		 *  1. Return codes (OK, WRONG_INDEX, WRONG_RESULT_LENGTH) aren't checked at all.
+		 *  2. Type Integer isn't checked
+		 *  3. Non-existing index isn't checked
+		 */
 	}
 
 	@Test
@@ -64,6 +69,9 @@ private static final int INSERTED_NUMBER = 100;
 		Integer elementInt = 25;
 		insertSorted(arInt, elementInt, actualInt);
 		assertArrayEquals(expectedInt, actualInt);
+		/* V.R.
+		 *  Return codes (OK, WRONG_RESULT_LENGTH) aren't checked at all.
+		 */
 	}
 
 	@Test
@@ -74,6 +82,9 @@ private static final int INSERTED_NUMBER = 100;
 		String element = "dd";
 		addLast(arStr, element, actualStr);
 		assertArrayEquals(expectedStr, actualStr);
+		/* V.R.
+		 *  Return codes (OK, WRONG_RESULT_LENGTH) aren't checked at all.
+		 */
 	}
 	
 	@Test
@@ -84,6 +95,9 @@ private static final int INSERTED_NUMBER = 100;
 		String element = "dd";
 		addFirst(arStr, element, actualStr);
 		assertArrayEquals(expectedStr, actualStr);
+		/* V.R.
+		 *  Return codes (OK, WRONG_RESULT_LENGTH) aren't checked at all.
+		 */
 	}
 
 }
