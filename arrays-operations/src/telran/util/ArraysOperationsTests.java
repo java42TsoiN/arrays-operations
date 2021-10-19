@@ -48,6 +48,9 @@ private static final int INSERTED_NUMBER = 100;
 		index = 3;
 		remove(arStr, index, actualStr);
 		assertArrayEquals(expectedStrLast, actualStr);
+		//[YG] try run a proper test for index = 4
+		//[YG] no tests for wrong indexes and wrong array length
+		//[YG] no tests on returned values
 	}
 
 	@Test
